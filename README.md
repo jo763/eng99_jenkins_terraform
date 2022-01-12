@@ -17,6 +17,27 @@ sudo mv terraform /usr/bin
 terraform --version
 ```
 - Place `/usr/bin` into the Jenkins Install directory form
+
+```
+
+```
+- Go to Manage Jenkins --> Configure System
+- Global Properties --> Environment Variables
+
+- Name: AWS_ACCESS_KEY_ID
+
+
+- Name: AWS_SECRET_ACCESS_KEY
+
+
+- Name: AWS_DEFAULT_REGION
+- Value: eu-west-1
+
+- Go to Manage Jenkins --> Credentials
+- Add Credentials
+- Kind: AWS Credentials
+- Type in AWS credentials
+
 ```
 pipeline{
     agent any
