@@ -1,4 +1,0 @@
-[web]
-ec2-instance ansible_host=54.216.199.31 ansible_user=ubuntu
-#[web]
-#54.216.199.31 ansible_user=eng99
