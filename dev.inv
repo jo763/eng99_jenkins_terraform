@@ -1,4 +1,4 @@
 [web]
-192.168.33.10 ansible_connection=ssh ansible_ssh_user=ubuntu
+192.168.33.10 ansible_connection=ssh ansible_ssh_user=eng99
 #[web]
 #54.216.199.31 ansible_user=eng99
