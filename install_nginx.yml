@@ -1,0 +1,20 @@
+## Ensure to be in /etc/ansible
+# To run ansible-playbook install_nginx.yml
+# This File is to configure and install nginx in web agent node
+---
+# Which host do we need to install nginx in
+- hosts: web
+
+# What facts do we want to see whilst installing
+  gather_facts: true
+
+# Do we need admin access? yes
+  become: true
+
+# What task do we want to perform in this yml file?
+  tasks:
+  - name: Install Nginx in web agent node
+    apt: pkg=nginx state=present
+    become_user: root
+
+# What is end goal for this task?
